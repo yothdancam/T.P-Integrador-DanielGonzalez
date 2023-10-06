@@ -146,7 +146,8 @@ span {
 
 /*FOOTER*/
 footer {
-  background-color: #234a62;
+  background: rgb(28,54,67);
+  background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(30,83,113,1) 100%);
   color: white;
   padding: 20px 0;
   height: 5rem;
