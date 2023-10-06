@@ -146,8 +146,12 @@ span {
 
 /*FOOTER*/
 footer {
-  background: rgb(28,54,67);
-  background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(30,83,113,1) 100%);
+  background: rgb(28, 54, 67);
+  background: linear-gradient(
+    90deg,
+    rgba(28, 54, 67, 1) 0%,
+    rgba(30, 83, 113, 1) 100%
+  );
   color: white;
   padding: 20px 0;
   height: 5rem;
@@ -179,16 +183,26 @@ footer {
   }
 
   #logo {
-    margin: 0 auto 1rem; /* Centra el logo horizontalmente y agrega margen en la parte inferior */
+    margin: 0; /* Centra el logo horizontalmente y agrega margen en la parte inferior */
   }
 
   .conf {
     margin: 0;
-    font-size: 1.2rem; /* Ajusta el tamaño del texto para una mejor legibilidad */
+    margin-left: 6rem;
+    font-size: 1.2rem;
   }
 
   nav {
     margin: 1rem 0;
+  }
+
+  .list {
+    flex-wrap: wrap; /* Permite que los elementos de la lista se envuelvan en varias líneas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+
+  .list li {
+    margin-bottom: 0.5rem; /* Agrega espacio entre los elementos de la lista */
   }
 
   /* HERO IMAGE */
@@ -288,5 +302,84 @@ footer {
     margin-right: 0;
     gap: 2rem;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  header {
+    height: auto;
+    padding: 0.5rem;
+    align-items: center;
+  }
+
+  #logo {
+    margin: 0; /* Centra el logo horizontalmente y agrega margen en la parte inferior */
+  }
+
+  .conf {
+    margin: 0;
+    margin-left: 6rem;
+    font-size: 1.2rem;
+  }
+
+  nav {
+    margin: 1rem 0;
+  }
+
+  .list {
+    flex-wrap: wrap; /* Permite que los elementos de la lista se envuelvan en varias líneas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+
+  .list li {
+    margin-bottom: 0.5rem; /* Agrega espacio entre los elementos de la lista */
+  }
+
+  /* FORMULARIO */
+  .form {
+    margin-bottom: 3rem;
+    padding: 0 1rem; /* Agrega padding para separar el contenido del borde del contenedor */
+  }
+
+  .formNombre {
+    width: 100%; /* Haz que los campos de texto se ajusten al 100% del contenedor */
+  }
+
+  .textarea {
+    padding: 0 1rem; /* Agrega padding al textarea */
+    margin-top: -14px; /* Ajusta el margen superior para alinear el textarea con los campos de texto */
+  }
+
+  .label {
+    padding: 0 1rem; /* Ajusta el padding del label si es necesario */
+  }
+
+  .padreEnviar {
+    padding-top: 10px;
+    text-align: center; /* Centra el botón de enviar */
+  }
+}
+
+@media screen and (max-width:960px){
+  /* CONTENEDOR (CAJA) */
+  #caja {
+    flex-direction: column; /* Cambia la dirección de los elementos en el contenedor a columna */
+  }
+
+  /* IMAGEN DE HONOLULU */
+  #caja .col-6:first-child {
+    padding: 0;
+    width: 100%;
+  }
+
+  /* TEXTO DE HONOLULU */
+  #caja .col-6:last-child {
+    padding: 1rem;
+    width: 100%;
   }
 }
