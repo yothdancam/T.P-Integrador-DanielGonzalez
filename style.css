@@ -1,3 +1,7 @@
+:root{
+  --colorHeader:#353a40;
+  --sombraImagen:rgba(29, 26, 32, 0.6);
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +16,7 @@ body {
 }
 /*  HEADER  */
 header {
-  background-color: #353a40;
+  background-color:var(--colorHeader);
   width: 100%;
   height: 5rem;
   padding: 1rem;
@@ -63,7 +67,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  background-color: rgba(29, 26, 32, 0.6);
+  background-color:var(--sombraImagen);
   text-align: end;
   padding-right: 5rem;
 }
@@ -76,12 +80,11 @@ nav {
   color: white;
 }
 
-.Conf-Bs {
+#Conf-Bs {
   padding-right: 7rem;
 }
 
 #texto p {
-  font-size: 18px !important;
   line-height: 1.4; /* espaciado*/
 }
 
@@ -179,7 +182,8 @@ footer {
   }
 
   #logo {
-    margin: 0; /* Centra el logo horizontalmente y agrega margen en la parte inferior */
+    margin: 0; 
+    
   }
 
   .conf {
@@ -193,12 +197,12 @@ footer {
   }
 
   .list {
-    flex-wrap: wrap; /* Permite que los elementos de la lista se envuelvan en varias líneas */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; 
+    justify-content: center; 
   }
 
   .list li {
-    margin-bottom: 0.5rem; /* Agrega espacio entre los elementos de la lista */
+    margin-bottom: 0.5rem; 
   }
 
   /* HERO IMAGE */
@@ -224,13 +228,20 @@ footer {
   }
 
   .hero-text {
-    width: 100%; /* O el porcentaje deseado para el ancho del texto */
+    width: 30rem; 
+    height: 50%; 
     position: absolute;
     top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-38%, -68%);
+    color: rgb(201, 200, 200);
   }
-
+  
+  #texto p {
+    font-size: 16px !important;
+    line-height: 1.4; /* espaciado*/
+    
+  }
   .hero-image {
     height: 25rem;
   }
@@ -248,7 +259,7 @@ footer {
 
   /* CONTENEDOR (CAJA) */
   #caja {
-    flex-direction: column; /* Cambia la dirección de los elementos en el contenedor a columna */
+    flex-direction: column; 
   }
 
   /* IMAGEN DE HONOLULU */
@@ -266,25 +277,24 @@ footer {
   /* FORMULARIO */
   .form {
     margin-bottom: 3rem;
-    padding: 0 1rem; /* Agrega padding para separar el contenido del borde del contenedor */
+    padding: 0 1rem; 
   }
 
   .formNombre {
-    width: 100%; /* Haz que los campos de texto se ajusten al 100% del contenedor */
+    width: 100%; 
   }
 
   .textarea {
-    padding: 0 1rem; /* Agrega padding al textarea */
-    margin-top: -14px; /* Ajusta el margen superior para alinear el textarea con los campos de texto */
-  }
+    padding: 0 1rem; 
+    margin-top: -14px; }
 
   .label {
-    padding: 0 1rem; /* Ajusta el padding del label si es necesario */
+    padding: 0 1rem; 
   }
 
   .padreEnviar {
     padding-top: 10px;
-    text-align: center; /* Centra el botón de enviar */
+    text-align: center; 
   }
 
   /* FOOTER */
@@ -314,7 +324,7 @@ footer {
   }
 
   #logo {
-    margin: 0; /* Centra el logo horizontalmente y agrega margen en la parte inferior */
+    margin: 0; 
   }
 
   .conf {
@@ -339,32 +349,32 @@ footer {
   /* FORMULARIO */
   .form {
     margin-bottom: 3rem;
-    padding: 0 1rem; /* Agrega padding para separar el contenido del borde del contenedor */
+    padding: 0 1rem;
   }
 
   .formNombre {
-    width: 100%; /* Haz que los campos de texto se ajusten al 100% del contenedor */
+    width: 100%; 
   }
 
   .textarea {
-    padding: 0 1rem; /* Agrega padding al textarea */
-    margin-top: -14px; /* Ajusta el margen superior para alinear el textarea con los campos de texto */
+    padding: 0 1rem; 
+    margin-top: -14px; 
   }
 
   .label {
-    padding: 0 1rem; /* Ajusta el padding del label si es necesario */
+    padding: 0 1rem; 
   }
 
   .padreEnviar {
     padding-top: 10px;
-    text-align: center; /* Centra el botón de enviar */
+    text-align: center; 
   }
 }
 
 @media screen and (max-width:960px){
   /* CONTENEDOR (CAJA) */
   #caja {
-    flex-direction: column; /* Cambia la dirección de los elementos en el contenedor a columna */
+    flex-direction: column; 
   }
 
   /* IMAGEN DE HONOLULU */
@@ -378,4 +388,13 @@ footer {
     padding: 1rem;
     width: 100%;
   }
+}
+
+@media screen and (max-width:1045px){
+  .list2{
+      gap: 1rem !important;
+      display: flex; 
+      align-items: center;
+    
+  }   
 }
