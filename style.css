@@ -233,7 +233,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 53%;
-    transform: translate(-42%, -68%);
+    transform: translate(-39%, -68%);
     color: rgb(201, 200, 200);
   }
   
@@ -247,7 +247,7 @@ footer {
   }
   
   .boton{
-      font-size: 13px !important;
+      font-size: 13px !;
   }
 
   /* ORADORES CARDS */
