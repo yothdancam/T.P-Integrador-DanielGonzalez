@@ -232,7 +232,7 @@ footer {
     height: 50%; 
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 53%;
     transform: translate(-42%, -68%);
     color: rgb(201, 200, 200);
   }
@@ -245,10 +245,14 @@ footer {
   .hero-image {
     height: 25rem;
   }
+  
+  .boton{
+      font-size: 13px !important;
+  }
 
   /* ORADORES CARDS */
   .card {
-    width: 100%;
+    width: 90%;
     margin-bottom: 1rem;
   }
 
