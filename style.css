@@ -228,17 +228,17 @@ footer {
   }
 
   .hero-text {
-    width: 30rem; 
+    width: 26rem; 
     height: 50%; 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-38%, -68%);
+    transform: translate(-42%, -68%);
     color: rgb(201, 200, 200);
   }
   
   #texto p {
-    font-size: 16px !important;
+    font-size: 14px !important;
     line-height: 1.4; /* espaciado*/
     
   }
