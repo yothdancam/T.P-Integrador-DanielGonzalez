@@ -22,6 +22,12 @@ header {
   padding: 1rem;
 }
 
+.header2{
+  height: 3rem ;
+  display: flex;
+  align-items: center;
+}
+
 #logo {
   max-width: 6rem;
   margin-left: 4rem;
@@ -167,6 +173,57 @@ footer {
 .list2 li a {
   text-decoration: none; /*quita el subrayado del enlace de cada elemento de la list*/
   color: aliceblue;
+}
+
+/*Registro*/
+.header2{
+  height: 4rem ;
+}
+
+.ComprarTickets{
+  padding-top: 2rem;
+  max-width: 50%;
+}
+.categoria{
+  border: 1px solid black;
+  width: 40vw;
+  height: auto;
+
+}
+.cajaEstudiante{
+  border-color: #007bff;
+}
+.cajaEstudiante:hover{
+  background-color: #b1d7fe;
+  cursor: pointer;
+}
+.cajaTrainee{
+  border-color: #4bb7c8;
+}
+.cajaTrainee:hover{
+  background-color: rgb(199, 222, 247);
+  cursor: pointer;
+}
+.cajaJunior{
+  border-color: #ffc10a;
+}
+.cajaJunior:hover{
+  background-color: #fbe7aa;
+  cursor: pointer;
+}
+.caja-texto{
+  font-size: 13px;
+}
+
+.totalPagar{
+  background-color: #cce5ff;
+  height: 3rem;
+  padding-left: 1rem;
+  color: #215287;
+}
+.botonn{
+background-color: #83c63d;
+color: aliceblue;
 }
 
 @media (max-width: 767px) {
@@ -374,6 +431,7 @@ footer {
     text-align: center; 
   }
 }
+
 
 @media screen and (max-width:960px){
   /* CONTENEDOR (CAJA) */
