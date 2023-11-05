@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (categoria === 2) {
             descuento = 0.5; // 50% de descuento para trainee
         } else if (categoria === 3) {
-            descuento = 0.85; // 15% de descuento para junior
+            descuento = 0.15; // 15% de descuento para junior
         }
 
         // Actualizar el valor del campo de cantidad
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Calcular total a pagar y mostrarlo en el input
         const total = cantidad * precioBase * (1 - descuento);
-        totalPagarInput.value = "Total a pagar: $" + total.toFixed(2);
+        totalPagarInput.value = "Total a pagar: $" + total.toFixed();
     }
 
     // Event listeners para detectar cambios en cantidad y categoría
