@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Función para calcular el total a pagar
     function calcularTotal() {
-        const cantidad = parseInt(cantidadInput.value);
+        let cantidad = parseInt(cantidadInput.value);
+        cantidad = cantidad < 0 ? 0 : cantidad; // Impide números negativos
+
         const categoria = parseInt(categoriaSelect.value);
 
         let descuento = 0;
@@ -21,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (categoria === 3) {
             descuento = 0.85; // 15% de descuento para junior
         }
+
+        // Actualizar el valor del campo de cantidad
+        cantidadInput.value = cantidad;
 
         // Calcular total a pagar y mostrarlo en el input
         const total = cantidad * precioBase * (1 - descuento);
