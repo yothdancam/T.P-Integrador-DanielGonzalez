@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
         // Calcular total a pagar y mostrarlo en el input
         const total = cantidad * precioBase * (1 - descuento);
         totalPagarInput.value = "Total a pagar: $" + total.toFixed();
+
+        // Borrar el valor del input totalPagarInput
+       // totalPagarInput.value = "";
     }
 
     // Event listeners para detectar cambios en cantidad y categoría
@@ -40,5 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
     botonResumen.addEventListener("click", function(event) {
         event.preventDefault(); // Prevenir el envío del formulario
         calcularTotal(); // Calcular el total al hacer clic en "Resumen"
+
+        // Mostrar el valor del input totalPagarInput
+        totalPagarInput.value = "Total a pagar: $" + total.toFixed();
     });
 });
